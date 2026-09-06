@@ -1,603 +1,981 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabor y Arte | Catering y Eventos</title>
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabor y Arte - Catering y eventos. Creamos experiencias gastronómicas para momentos inolvidables.">
+  <title>Sabor y Arte | Catering & Eventos</title>
 
-    <!-- Iconos -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="inicio">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-utensils"></i></span>
+        <span>
+          <strong>Sabor <em>y</em> Arte</strong>
+          <small>CATERING & EVENTOS</small>
+        </span>
+      </a>
 
-    <!-- ============================= -->
-    <!-- ENCABEZADO -->
-    <!-- ============================= -->
+      <nav class="nav" id="nav">
+        <a class="active" href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
 
-    <header class="encabezado">
+      <a class="nav-cta" href="#contacto">Solicitar cotización</a>
 
-        <div class="logo">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
 
-            <img src="imagenes/logo.jpeg" alt="Logo Sabor y Arte">
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow"><i class="fa-solid fa-star"></i> CATERING & EVENTOS</span>
+          <h1>Sabores que convierten cada evento en un <span>momento inolvidable.</span></h1>
+          <p>
+            Creamos experiencias gastronómicas con sabor, creatividad y
+            atención personalizada para celebrar tus momentos más importantes.
+          </p>
 
-            <div>
-                <h1>SABOR Y ARTE</h1>
-                <p>Donde el sabor se convierte en arte</p>
+          <div class="hero-buttons">
+            <a href="#servicios" class="btn btn-primary">Conocer nuestros servicios <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contacto" class="btn btn-light">Solicitar cotización</a>
+          </div>
+
+          <div class="hero-features">
+            <div><i class="fa-solid fa-check"></i> Menús personalizados</div>
+            <div><i class="fa-solid fa-check"></i> Atención profesional</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slider-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">LO QUE HACEMOS</span>
+          <h2>Nuestros servicios</h2>
+          <p>Nos encargamos de cada detalle para que tú solo disfrutes de tu evento.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <h3>Eventos sociales</h3>
+            <p>Catering para cumpleaños, aniversarios, graduaciones y celebraciones especiales.</p>
+            <a href="#contacto">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card featured">
+            <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Buffet y banquetes</h3>
+            <p>Propuestas gastronómicas completas con presentación cuidada y servicio profesional.</p>
+            <a href="#menu">Ver opciones <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Catering corporativo</h3>
+            <p>Almuerzos, reuniones, coffee breaks y experiencias gastronómicas para empresas.</p>
+            <a href="#contacto">Solicitar información <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <h3>Coffee break</h3>
+            <p>Bocaditos, bebidas y postres ideales para reuniones, capacitaciones y eventos.</p>
+            <a href="#contacto">Ver propuesta <i class="fa-solid fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+ <!-- ================= MENU ================= -->
+    <section class="section section-dark" id="menu">
+      <div class="container">
+        <div class="section-heading centered light">
+          <span class="eyebrow">SABORES DE LA CASA</span>
+          <h2>Nuestro menú</h2>
+          <p>Una selección de platos que puedes adaptar según el estilo de tu evento.</p>
+        </div>
+
+        <div class="menu-filters">
+          <button class="filter active" data-category="todos">Todos</button>
+          <button class="filter" data-category="entradas">Entradas</button>
+          <button class="filter" data-category="fondos">Fondos</button>
+          <button class="filter" data-category="postres">Postres</button>
+          <button class="filter" data-category="bebidas">Bebidas</button>
+        </div>
+
+        <div class="menu-grid">
+
+
+          <!-- ================= FONDOS ================= -->
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+              <img src="imagenes/lomo.jpg" alt="Lomo saltado">
             </div>
-
-        </div>
-
-
-        <!-- MENÚ -->
-
-        <nav class="menu">
-
-            <a href="#inicio">Inicio</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#productos">Productos</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#clientes">Clientes</a>
-            <a href="#contacto">Contacto</a>
-
-        </nav>
-
-    </header>
-
-
-
-    <!-- ============================= -->
-    <!-- INICIO / PORTADA -->
-    <!-- ============================= -->
-
-    <section id="inicio" class="portada">
-
-        <div class="contenido-portada">
-
-            <h2>Sabores que crean momentos inolvidables</h2>
-
-            <p>
-                Somos especialistas en catering para todo tipo de
-                celebraciones y eventos especiales.
-            </p>
-
-            <a href="#productos" class="boton">
-                Ver nuestros productos
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ============================= -->
-    <!-- NOSOTROS -->
-    <!-- ============================= -->
-
-    <section id="nosotros" class="seccion">
-
-        <h2 class="titulo">Sobre Nosotros</h2>
-
-        <div class="nosotros-contenido">
-
-            <div class="nosotros-texto">
-
-                <h3>¿Quiénes somos?</h3>
-
-                <p>
-                    <strong>Sabor y Arte</strong> es una empresa dedicada
-                    al servicio de catering y organización gastronómica
-                    para diferentes tipos de eventos.
-                </p>
-
-                <p>
-                    Nuestro objetivo es brindar productos de calidad,
-                    una excelente presentación y una atención
-                    personalizada para cada cliente.
-                </p>
-
-                <p>
-                    Combinamos creatividad, sabor y dedicación para
-                    convertir cada celebración en una experiencia
-                    especial.
-                </p>
-
-                <div class="informacion">
-
-                    <div>
-                        <i class="fa-solid fa-utensils"></i>
-                        <h4>Rubro</h4>
-                        <p>Catering y eventos</p>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-heart"></i>
-                        <h4>Compromiso</h4>
-                        <p>Calidad y atención</p>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <h4>Experiencia</h4>
-                        <p>Momentos especiales</p>
-                    </div>
-
-                </div>
-
+            <div class="dish-info">
+              <div>
+                <h3>Lomo saltado</h3>
+                <p>Carne salteada, papas doradas y arroz.</p>
+              </div>
+              <strong>Consultar</strong>
             </div>
+          </article>
+
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+              <img src="imagenes/polloalaplancha.jpg" alt="Pollo a la plancha">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Pollo a la plancha</h3>
+                <p>Pollo acompañado de guarnición de temporada.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+              <img src="imagenes/especial.jpg" alt="Menú especial">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Menú especial</h3>
+                <p>Propuesta personalizada según tu evento.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+
+              <img src="imagenes/ensaladacesar.jpg" alt="Ensalada César">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Ensalada César</h3>
+                <p>Hecho a base de lechuga romana, trozos de pan tostado (crotones) y queso parmesano, todo bañado con
+                  un aderezo cremoso emulsionado con anchoas, ajo, mostaza, aceite de oliva y jugo de limón.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+
+              <img src="imagenes/pokebowl.png" alt="Poke bowl">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Pokebowlr</h3>
+                <p>Consiste en una ensalada de pescado crudo cortado en cubos, servido dentro de un bol junto con una
+                  base de cereales, verduras frescas y salsa.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="fondos">
+            <div class="dish-image">
+
+              <img src="imagenes/club.jpg" alt="Club Sandwich">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Club Sandwich</h3>
+                <p>emparedado clásico de doble piso elaborado tradicionalmente con tres rebanadas de pan tostado,
+                  relleno de pollo o pavo, tocino crujiente, lechuga, tomate y mayonesa.
+                </p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <!-- ================= ENTRADAS ================= -->
+
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/tabla.jpg" alt="Tabla de bocaditos">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Tabla de bocaditos</h3>
+                <p>Variedad de opciones saladas para compartir.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/tablaquesos.jfif" alt="Tablaquesos">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Tabla de quesos</h3>
+                <p>Variedad selecta de quesos para compartir.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/crema.jfif" alt="crema de zapallo">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Crema de zapallo</h3>
+                <p>Sopa espesa, suave y nutritiva que se prepara licuando zapallo cocido con verduras, leche y caldo..
+                </p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/quiches.jfif" alt="Quiches">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Quiche</h3>
+                <p>Tipo de tarta o pastel salado de origen francés que se elabora con una base de masa quebrada</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/tequeños.jpg" alt="Tequeños">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Tequeños</h3>
+                <p></p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-image">
+              <img src="imagenes/BruschettaCapresse.jfif" alt="BruschettaCapresse">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Bruschetta Capresse</h3>
+                <p>Aperitivo italiano que combina tomate fresco, mozarella y albahaca sobre una base de pan tostado con
+                  ajo y aceite de oliva</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+          <!-- ================= POSTRES ================= -->
+
+
+          <article class="dish-card" data-category="postres">
+            <div class="dish-image">
+              <img src="imagenes/postresartesanales.jpg" alt="Postres artesanales">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Postres artesanales</h3>
+                <p>Pequeños dulces preparados para cada ocasión.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+     <article class="dish-card" data-category="postres">
+            <div class="dish-image">
+              <img src="imagenes/cheesecake.jfif" alt="cheesecake">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>cheesecake</h3>
+                <p>Postre dulce hecho con una base crujiente de galleta y una capa cremosa superior a base de queso crema, azúcar y huevos</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+            <article class="dish-card" data-category="postres">
+            <div class="dish-image">
+              <img src="imagenes/struddel.jfif" alt="struddel">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Strudel de manzana</h3>
+                <p> Rolllo de masa fina relleno de manzana y otros ingredientes dulces</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+                <article class="dish-card" data-category="postres">
+            <div class="dish-image">
+              <img src="imagenes/torta.jpg" alt="torta">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Torta de chocolate</h3>
+                <p> Tajada hecho a base de bizcocho de cacao, cubierto y relleno con ganache</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+           <article class="dish-card" data-category="postres">
+            <div class="dish-image">
+              <img src="imagenes/postresartesanales.jpg" alt="Postres artesanales">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Postres artesanales</h3>
+                <p>Pequeños dulces preparados para cada ocasión.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+         <!-- ================= BEBIDAS ================= -->
+
+          <article class="dish-card" data-category="bebidas">
+            <div class="dish-image">
+              <img src="imagenes/bebidas.jpg" alt="Bebidas naturales">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Bebidas naturales</h3>
+                <p>Refrescos y bebidas para acompañar tu menú.</p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+
+             <article class="dish-card" data-category="bebidas">
+            <div class="dish-image">
+              <img src="imagenes/cafes.jfif" alt="cafes">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Café</h3>
+                <p>Variedad de grano selecto, calidad premium. Presentación en café americano, espresso y capuccino </p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+          
+             <article class="dish-card" data-category="bebidas">
+            <div class="dish-image">
+              <img src="imagenes/infusiones.jpg" alt="infusiones">
+            </div>
+            <div class="dish-info">
+              <div>
+                <h3>Infusiones</h3>
+                <p>Bebidas calientes como manzanilla, anís, hierbabuena y té. </p>
+              </div>
+              <strong>Consultar</strong>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOSOTROS ================= -->
+
+<section class="section about" id="nosotros">
+
+  <div class="container about-grid">
+
+    <!-- ================= CARRUSEL ================= -->
+
+    <div class="about-image">
+
+      <div class="about-carousel">
+
+        <div class="about-slide active">
+          <img 
+            src="imagenes/nosotros.jpg" 
+            alt="Equipo de Sabor y Arte"
+          >
+        </div>
+
+        <div class="about-slide">
+          <img 
+            src="imagenes/nosotros2.jpeg" 
+            alt="Servicio de catering Sabor y Arte"
+          >
+        </div>
+
+        <div class="about-slide">
+          <img 
+            src="imagenes/nosotros3.jpeg" 
+            alt="Eventos de Sabor y Arte"
+          >
+        </div>
+
+        <div class="about-slide">
+          <img 
+            src="imagenes/nosotros4.jpeg" 
+            alt="Preparación gastronómica"
+          >
+        </div>
+
+        <div class="about-slide">
+          <img 
+            src="imagenes/nosotros5.jpeg" 
+            alt="Experiencia Sabor y Arte"
+          >
+        </div>
+
+        <!-- Flecha anterior -->
+        <button 
+          class="about-prev" 
+          type="button"
+          aria-label="Imagen anterior"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <!-- Flecha siguiente -->
+        <button 
+          class="about-next" 
+          type="button"
+          aria-label="Imagen siguiente"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Indicadores -->
+        <div class="about-dots">
+
+          <button 
+            class="about-dot active" 
+            type="button"
+            aria-label="Ir a imagen 1"
+          ></button>
+
+          <button 
+            class="about-dot" 
+            type="button"
+            aria-label="Ir a imagen 2"
+          ></button>
+
+          <button 
+            class="about-dot" 
+            type="button"
+            aria-label="Ir a imagen 3"
+          ></button>
+
+          <button 
+            class="about-dot" 
+            type="button"
+            aria-label="Ir a imagen 4"
+          ></button>
+
+          <button 
+            class="about-dot" 
+            type="button"
+            aria-label="Ir a imagen 5"
+          ></button>
 
         </div>
 
-    </section>
+      </div>
 
 
+      <!-- Experiencia -->
 
-    <!-- ============================= -->
-    <!-- PRODUCTOS -->
-    <!-- ============================= -->
+      <div class="experience-badge">
 
-    <section id="productos" class="seccion productos">
+        <strong>10+</strong>
 
-        <h2 class="titulo">Productos Principales</h2>
+        <span>
+          Años creando<br>
+          experiencias
+        </span>
 
-        <p class="subtitulo">
-            Conoce algunas de nuestras opciones gastronómicas.
-        </p>
+      </div>
 
-
-        <div class="tarjetas">
-
-
-            <!-- PRODUCTO 1 -->
-
-            <article class="tarjeta">
-
-                <img src="img/producto1.jpg"
-                     alt="Buffet para eventos">
-
-                <div class="tarjeta-contenido">
-
-                    <h3>Buffet para Eventos</h3>
-
-                    <p>
-                        Variedad de platos preparados especialmente
-                        para celebraciones y reuniones.
-                    </p>
-
-                    <span class="precio">
-                        Desde S/ 35.00
-                    </span>
-
-                </div>
-
-            </article>
+    </div>
 
 
+    <!-- ================= CONTENIDO ================= -->
 
-            <!-- PRODUCTO 2 -->
+    <div class="about-content">
 
-            <article class="tarjeta">
+      <span class="eyebrow">
+        SOBRE NOSOTROS
+      </span>
 
-                <img src="img/producto2.jpg"
-                     alt="Bocaditos">
+      <h2>
+        Donde la gastronomía se encuentra con el arte.
+      </h2>
 
-                <div class="tarjeta-contenido">
+      <p>
+        En <strong>Sabor y Arte</strong> creemos que un buen evento comienza
+        con una buena experiencia. Por eso combinamos gastronomía, creatividad
+        y servicio para crear propuestas que sorprendan a tus invitados.
+      </p>
 
-                    <h3>Bocaditos y Aperitivos</h3>
-
-                    <p>
-                        Deliciosos bocaditos ideales para compartir
-                        en cualquier tipo de evento.
-                    </p>
-
-                    <span class="precio">
-                        Desde S/ 25.00
-                    </span>
-
-                </div>
-
-            </article>
+      <p>
+        Nuestro equipo trabaja contigo desde la planificación hasta el último
+        detalle del servicio.
+      </p>
 
 
+      <div class="about-points">
 
-            <!-- PRODUCTO 3 -->
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
 
-            <article class="tarjeta">
-
-                <img src="img/producto3.jpg"
-                     alt="Mesa dulce">
-
-                <div class="tarjeta-contenido">
-
-                    <h3>Mesas Dulces</h3>
-
-                    <p>
-                        Postres y dulces con una presentación
-                        atractiva para tus celebraciones.
-                    </p>
-
-                    <span class="precio">
-                        Desde S/ 30.00
-                    </span>
-
-                </div>
-
-            </article>
-
+          <span>
+            <strong>Calidad</strong>
+            <small>Ingredientes seleccionados.</small>
+          </span>
         </div>
 
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+
+          <span>
+            <strong>Creatividad</strong>
+            <small>Presentaciones que sorprenden.</small>
+          </span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+
+          <span>
+            <strong>Compromiso</strong>
+            <small>Nos adaptamos a tu evento.</small>
+          </span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-circle-check"></i>
+
+          <span>
+            <strong>Servicio</strong>
+            <small>Atención personalizada.</small>
+          </span>
+        </div>
+
+      </div>
+
+
+      <a href="#contacto" class="btn btn-primary">
+        Hablemos de tu evento
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ================= EVENTOS ================= -->
+    <section class="section events" id="eventos">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">NUESTRO TRABAJO</span>
+          <h2>Eventos que hemos acompañado</h2>
+          <p>Algunas ideas visuales de lo que podemos crear para ti.</p>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card tall">
+            <img src="imagenes/celebracion.jpg" alt="Momentos especiales" class="event-img">
+            <div class="event-label"><small>CELEBRACIONES</small><h3>Momentos especiales</h3></div>
+          </div>
+          <div class="event-card">
+            <img src="imagenes/coorporativos.jpg" alt="Experiencias para empresas" class="event-img">
+            <div class="event-label"><small>CORPORATIVO</small><h3>Experiencias para empresas</h3></div>
+          </div>
+          <div class="event-card">
+            <img src="imagenes/bufeet.jpg" alt="Presentación y sabor" class="event-img">
+            <div class="event-label"><small>BUFFET</small><h3>Presentación y sabor</h3></div>
+          </div>
+        </div>
+
+        <div class="center-action">
+          <a href="#contacto" class="text-link">Quiero una propuesta para mi evento <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
     </section>
 
+    <!-- ================= VIDEO ================= -->
+    <section class="section video-section">
+      <div class="container video-grid">
+        <div class="video-box" id="videoBox">
+          <div class="video-placeholder">
+            <button class="play-button" id="playVideo" aria-label="Reproducir video">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <span>VIDEO REPRESENTATIVO</span>
+            <small>Reemplaza este espacio por tu video</small>
+          </div>
+        </div>
+
+        <div class="video-content">
+          <span class="eyebrow">CONOCE NUESTRA PROPUESTA</span>
+          <h2>Más que catering, creamos experiencias.</h2>
+          <p>
+            Desde una pequeña reunión hasta una gran celebración,
+            diseñamos el servicio pensando en tus invitados.
+          </p>
+
+          <ul class="video-list">
+            <li><i class="fa-solid fa-utensils"></i><span><strong>Menús personalizados</strong><small>Propuestas según tus necesidades.</small></span></li>
+            <li><i class="fa-solid fa-users"></i><span><strong>Atención profesional</strong><small>Un equipo pendiente de cada detalle.</small></span></li>
+            <li><i class="fa-solid fa-calendar-check"></i><span><strong>Organización</strong><small>Planificación antes, durante y después.</small></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COTIZACIÓN ================= -->
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <span class="eyebrow">HABLEMOS</span>
+          <h2>¿Tienes un evento en mente?</h2>
+          <p>
+            Cuéntanos qué estás planeando y prepararemos una propuesta
+            pensada especialmente para ti.
+          </p>
+
+          <div class="contact-data">
+            <a href="https://wa.me/51975528463"><i class="fa-solid fa-phone"></i><span><small>Teléfono</small>+51 975 528 463</span></a>
+            <a href="mailto:contacto@saboryarte.com"><i class="fa-solid fa-envelope"></i><span><small>Correo</small>contacto@saboryarte.com</span></a>
+            <div><i class="fa-solid fa-location-dot"></i><span><small>Ubicación</small>Lima, Perú</span></div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label>Nombre completo
+              <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            </label>
+            <label>Teléfono
+              <input type="tel" name="telefono" placeholder="999 999 999" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Tipo de evento
+              <select name="evento" required>
+                <option value="">Selecciona una opción</option>
+                <option>Cumpleaños</option>
+                <option>Boda</option>
+                <option>Aniversario</option>
+                <option>Evento corporativo</option>
+                <option>Graduación</option>
+                <option>Otro</option>
+              </select>
+            </label>
+            <label>Número de invitados
+              <input type="number" name="invitados" min="1" placeholder="Ej. 50" required>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Fecha del evento
+              <input type="date" name="fecha" required>
+            </label>
+            <label>Presupuesto aproximado
+              <select name="presupuesto">
+                <option value="">Selecciona</option>
+                <option>Menos de S/ 1,000</option>
+                <option>S/ 1,000 - S/ 2,500</option>
+                <option>S/ 2,500 - S/ 5,000</option>
+                <option>Más de S/ 5,000</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Cuéntanos sobre tu evento
+            <textarea name="mensaje" rows="5" placeholder="Escribe aquí tus ideas, necesidades o consultas..."></textarea>
+          </label>
+
+          <button class="btn btn-primary form-submit" type="submit">
+            Solicitar cotización <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <!-- MARCA Y REDES SOCIALES -->
+    <div class="footer-brand">
+<a href="#inicio" class="logo footer-logo">
+  <img src="imagenes/sabor y arte.png" alt="Sabor y Arte">
+  <span>
+    <strong>Sabor <em>y</em> Arte</strong>
+    <small>CATERING & EVENTOS</small>
+  </span>
+</a>
+    
+
+      <p>
+        Sabores que convierten cada evento en un momento inolvidable.
+      </p>
+
+      <!-- REDES SOCIALES -->
+      <div class="socials">
+
+        <a href="https://www.facebook.com/"
+           aria-label="Facebook"
+           target="_blank">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/"
+           aria-label="Instagram"
+           target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/"
+           aria-label="TikTok"
+           target="_blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://w.app/jkyx7u"
+           aria-label="WhatsApp"
+           target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+      </div>
+
+    </div>
 
 
-    <!-- ============================= -->
+    <!-- EMPRESAS -->
+    <div class="footer-column">
+
+      <h3>Empresas</h3>
+
+      
+      <!-- Evaristo -->
+      <a href="https://evaristocatering.pe/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="empresa-link">
+
+        <img src="imagenes/Evaristo.jpeg"
+             alt="Evaristo Catering">
+
+        <span>Evaristo Catering</span>
+
+      </a>
+
+      <!-- Lucha Parodi -->
+      <a href="https://luchaparodi.pe/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="empresa-link">
+
+        <img src="imagenes/Lucha Parodi.jpeg"
+             alt="Lucha Parodi">
+
+        <span>Lucha Parodi</span>
+
+      </a>
+
+      <!-- Tzabar -->
+      <a href="https://www.tzabar.com.pe/cartas-del-catering.html"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="empresa-link">
+
+        <img src="imagenes/Tzabar.jpeg"
+             alt="Tzabar Catering">
+
+        <span>Tzabar Catering</span>
+
+      </a>
+
+      <!-- Hecho en Casa -->
+      <a href="https://hechoencasa.pe/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="empresa-link">
+
+        <img src="imagenes/Hecho en casa.jpeg"
+             alt="Hecho en Casa">
+
+        <span>Hecho en Casa</span>
+
+      </a>
+
+    </div>
+
+
     <!-- SERVICIOS -->
-    <!-- ============================= -->
+    <div class="footer-column">
 
-    <section id="servicios" class="seccion">
+      <h3>Servicios</h3>
 
-        <h2 class="titulo">Nuestros Servicios</h2>
+      <a href="#servicios">
+        Eventos sociales
+      </a>
 
-        <p class="subtitulo">
-            Nos encargamos de llevar sabor y creatividad a tus eventos.
-        </p>
+      <a href="#servicios">
+        Buffet y banquetes
+      </a>
 
+      <a href="#servicios">
+        Catering corporativo
+      </a>
 
-        <div class="tarjetas">
+      <a href="#servicios">
+        Coffee break
+      </a>
 
+    </div>
 
-            <!-- SERVICIO 1 -->
 
-            <article class="tarjeta servicio">
-
-                <img src="img/servicio1.jpg"
-                     alt="Catering para cumpleaños">
-
-                <div class="tarjeta-contenido">
-
-                    <i class="fa-solid fa-cake-candles icono"></i>
-
-                    <h3>Cumpleaños</h3>
-
-                    <p>
-                        Catering y bocaditos para celebrar
-                        cumpleaños de manera especial.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SERVICIO 2 -->
-
-            <article class="tarjeta servicio">
-
-                <img src="img/servicio2.jpg"
-                     alt="Catering para matrimonios">
-
-                <div class="tarjeta-contenido">
-
-                    <i class="fa-solid fa-champagne-glasses icono"></i>
-
-                    <h3>Matrimonios</h3>
-
-                    <p>
-                        Opciones gastronómicas para matrimonios
-                        y celebraciones especiales.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- SERVICIO 3 -->
-
-            <article class="tarjeta servicio">
-
-                <img src="img/servicio3.jpg"
-                     alt="Eventos corporativos">
-
-                <div class="tarjeta-contenido">
-
-                    <i class="fa-solid fa-building icono"></i>
-
-                    <h3>Eventos Corporativos</h3>
-
-                    <p>
-                        Servicios de catering para reuniones,
-                        empresas y eventos corporativos.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ============================= -->
-    <!-- CLIENTES -->
-    <!-- ============================= -->
-
-    <section id="clientes" class="seccion clientes">
-
-        <h2 class="titulo">Clientes Representativos</h2>
-
-        <p class="subtitulo">
-            Empresas y personas que confían en nuestro servicio.
-        </p>
-
-
-        <div class="clientes-contenedor">
-
-
-            <div class="cliente">
-
-                <img src="img/cliente1.png"
-                     alt="Cliente representativo 1">
-
-                <h3>Cliente 1</h3>
-
-                <p>
-                    Empresa que confía en nuestros servicios
-                    de catering.
-                </p>
-
-            </div>
-
-
-            <div class="cliente">
-
-                <img src="img/cliente2.png"
-                     alt="Cliente representativo 2">
-
-                <h3>Cliente 2</h3>
-
-                <p>
-                    Cliente satisfecho con nuestros productos
-                    y servicios.
-                </p>
-
-            </div>
-
-
-            <div class="cliente">
-
-                <img src="img/cliente3.png"
-                     alt="Cliente representativo 3">
-
-                <h3>Cliente 3</h3>
-
-                <p>
-                    Cliente que nos acompaña en sus
-                    celebraciones especiales.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ============================= -->
-    <!-- VIDEO -->
-    <!-- ============================= -->
-
-    <section class="seccion video-seccion">
-
-        <h2 class="titulo">Conoce Sabor y Arte</h2>
-
-        <p class="subtitulo">
-            Descubre nuestros productos y servicios.
-        </p>
-
-
-        <div class="video-contenedor">
-
-            <video controls>
-
-                <source src="img/video.mp4" type="video/mp4">
-
-                Tu navegador no permite reproducir este video.
-
-            </video>
-
-        </div>
-
-        <p class="video-nota">
-            Video representativo de mínimo 1 minuto.
-        </p>
-
-    </section>
-
-
-
-    <!-- ============================= -->
     <!-- CONTACTO -->
-    <!-- ============================= -->
+    <div class="footer-column">
 
-    <section id="contacto" class="seccion contacto">
+      <h3>Contacto</h3>
 
-        <h2 class="titulo">Contáctanos</h2>
+      <a href="tel:+51975528463">
+        <i class="fa-solid fa-phone"></i>
+        <span>+51 975 528 463</span>
+      </a>
 
-        <p class="subtitulo">
-            ¿Tienes un evento? Nosotros podemos ayudarte.
-        </p>
+      <a href="mailto:contacto@saboryarte.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>contacto@saboryarte.com</span>
+      </a>
 
+      <span class="contact-location">
+        <i class="fa-solid fa-location-dot"></i>
+        Lima, Perú
+      </span>
 
-        <div class="contacto-contenedor">
+    </div>
 
+  </div>
 
-            <!-- INFORMACIÓN -->
+<!-- ================= UTP ================= -->
+<div class="utp">
+  <a href="https://www.utp.edu.pe/"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="utp-link">
 
-            <div class="datos-contacto">
+    <img src="imagenes/UTP.jpg" alt="Universidad Tecnológica del Perú">
 
-                <h3>Información de contacto</h3>
+    <span>Universidad Tecnológica del Perú</span>
+  </a>
+</div>
+  
 
-                <p>
-                    <i class="fa-solid fa-user"></i>
-                    <strong>Responsable:</strong>
-                    Carolina Rivera
-                </p>
+  <!-- FOOTER INFERIOR -->
 
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    <strong>Correo:</strong>
-                    saboryarte@gmail.com
-                </p>
+  <div class="footer-bottom">
 
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    <strong>Teléfono:</strong>
-                    999 999 999
-                </p>
+    <div class="container">
 
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <strong>Ubicación:</strong>
-                    Lima, Perú
-                </p>
+      <span>
+        © <span id="year"></span> Sabor y Arte.
+        Todos los derechos reservados.
+      </span>
 
-            </div>
+      <span>
+        Catering & Eventos
+      </span>
 
+    </div>
 
+  </div>
 
-            <!-- FORMULARIO -->
+</footer>
 
-            <form id="formulario" class="formulario">
 
-                <h3>Envíanos un mensaje</h3>
+<!-- MENSAJE DE CONFIRMACIÓN -->
 
-                <input
-                    type="text"
-                    id="nombre"
-                    placeholder="Nombre completo"
-                    required
-                >
+<div class="toast" id="toast">
 
-                <input
-                    type="email"
-                    id="correo"
-                    placeholder="Correo electrónico"
-                    required
-                >
+  <i class="fa-solid fa-circle-check"></i>
 
-                <textarea
-                    id="mensaje"
-                    rows="5"
-                    placeholder="Escribe tu mensaje"
-                    required
-                ></textarea>
+  <span>
+    ¡Solicitud enviada correctamente!
+  </span>
 
-                <button type="submit" class="boton">
-                    Enviar mensaje
-                </button>
+</div>
 
-            </form>
 
-        </div>
+<!-- BOTÓN VOLVER ARRIBA -->
 
-    </section>
+<button class="back-top" id="backTop" aria-label="Volver arriba">
 
+  <i class="fa-solid fa-arrow-up"></i>
 
+</button>
 
-    <!-- ============================= -->
-    <!-- FOOTER -->
-    <!-- ============================= -->
 
-    <footer class="footer">
+<!-- JAVASCRIPT -->
 
-        <div class="footer-contenido">
-
-
-            <div class="footer-logo">
-
-                <h2>SABOR Y ARTE</h2>
-
-                <p>
-                    Donde el sabor se convierte en arte.
-                </p>
-
-            </div>
-
-
-
-            <!-- REDES -->
-
-            <div class="redes">
-
-                <h3>Redes Sociales</h3>
-
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                    Facebook
-                </a>
-
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
-
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                    TikTok
-                </a>
-
-            </div>
-
-
-
-            <!-- CONTACTO -->
-
-            <div class="footer-contacto">
-
-                <h3>Contacto</h3>
-
-                <p>
-                    Carolina Rivera
-                </p>
-
-                <p>
-                    saboryarte@gmail.com
-                </p>
-
-                <p>
-                    Lima - Perú
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            <p>
-                © 2026 Sabor y Arte. Todos los derechos reservados.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- JAVASCRIPT -->
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
+
