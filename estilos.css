@@ -317,6 +317,7 @@ button {
 
 .hero-text {
     width: min(650px, 100%);
+    max-width: 100%;
     color: var(--white);
 }
 
@@ -344,6 +345,7 @@ button {
     font-family: "Playfair Display", serif;
     font-size: clamp(42px, 5.5vw, 72px);
     line-height: 1.08;
+    overflow-wrap: anywhere;
 }
 
 .hero h1 span {
@@ -1816,16 +1818,74 @@ button {
 
 @media (max-width: 1050px) {
 
+    .header {
+        height: 72px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
     .nav {
-        gap: 17px;
+        position: fixed;
+        top: 72px;
+        right: -100%;
+
+        width: min(320px, 85%);
+        height: calc(100vh - 72px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px;
+        gap: 0;
+
+        background: var(--white);
+        box-shadow: -15px 0 35px rgba(0, 0, 0, .12);
+
+        overflow-y: auto;
+        transition: right var(--transition);
+    }
+
+    .nav.open {
+        right: 0;
     }
 
     .nav a {
-        font-size: 12px;
+        width: 100%;
+        padding: 14px 0;
+        font-size: 15px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav a::after {
+        bottom: 0;
+    }
+
+    .nav-cta {
+        display: none;
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-grid,
+    .video-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 650px;
+        margin-inline: auto;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .footer-grid {
@@ -1840,6 +1900,10 @@ button {
     .footer-brand p {
         max-width: 420px;
     }
+
+    .contact-form {
+        width: 100%;
+    }
 }
 
 
@@ -1849,87 +1913,20 @@ button {
 
 @media (max-width: 800px) {
 
-    /* HEADER */
-    .header {
-        height: 72px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav {
-        position: fixed;
-
-        top: 72px;
-        right: -100%;
-
-        width: min(320px, 85%);
-        height: calc(100vh - 72px);
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        padding: 25px;
-
-        gap: 0;
-
-        background: var(--white);
-
-        box-shadow: -15px 0 35px rgba(0,0,0,.12);
-
-        transition: right var(--transition);
-    }
-
-    .nav.open {
-        right: 0;
-    }
-
-    .nav a {
-        width: 100%;
-
-        padding: 14px 0;
-
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav a::after {
-        bottom: 0;
-    }
-
-    .nav-cta {
-        display: none;
-    }
-
-
-    /* HERO */
     .hero {
         min-height: 620px;
     }
 
     .hero h1 {
-        font-size: 45px;
-    }
-
-
-    /* GRIDS */
-    .about-grid,
-    .video-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .about-image {
-        width: 100%;
-        max-width: 650px;
-
-        margin-inline: auto;
+        font-size: 42px;
     }
 
     .about-carousel {
         height: 430px;
+    }
+
+    .experience-badge {
+        right: 10px;
     }
 
     .events-grid {
@@ -1941,12 +1938,9 @@ button {
         min-height: 330px;
     }
 
-    .menu-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contact-form {
-        width: 100%;
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
 
@@ -1984,7 +1978,7 @@ button {
     }
 
     .hero h1 {
-        font-size: 39px;
+        font-size: 34px;
     }
 
     .hero p {
@@ -1994,6 +1988,17 @@ button {
     .hero-buttons {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .menu-filters {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .dish-info {
+        flex-wrap: wrap;
     }
 
     .hero-buttons .btn {
@@ -2168,7 +2173,7 @@ button {
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .section-heading h2,

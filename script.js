@@ -32,6 +32,17 @@
         icon.classList.remove("fa-xmark");
       });
     });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1050) {
+        nav.classList.remove("open");
+        document.body.classList.remove("no-scroll");
+
+        const icon = menuToggle.querySelector("i");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-xmark");
+      }
+    });
   
     /* ================= NAVEGACIÓN ACTIVA ================= */
   
