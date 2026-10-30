@@ -1,0 +1,342 @@
+[
+  {
+    "Slug": "acpollo",
+    "Dest": "assets/images/productos/acpollo.jpg"
+  },
+  {
+    "Slug": "agallina",
+    "Dest": "assets/images/productos/agallina.jpg"
+  },
+  {
+    "Slug": "agua-saborizada",
+    "Dest": "assets/images/productos/agua-saborizada.jpg"
+  },
+  {
+    "Slug": "alfajor",
+    "Dest": "assets/images/productos/alfajor.jpg"
+  },
+  {
+    "Slug": "alfredo",
+    "Dest": "assets/images/productos/alfredo.jpg"
+  },
+  {
+    "Slug": "bebidas",
+    "Dest": "assets/images/index/bebidas.jpg"
+  },
+  {
+    "Slug": "brasa",
+    "Dest": "assets/images/productos/brasa.jpg"
+  },
+  {
+    "Slug": "brochetas",
+    "Dest": "assets/images/productos/brochetas.jpg"
+  },
+  {
+    "Slug": "brownie",
+    "Dest": "assets/images/productos/brownie.jpg"
+  },
+  {
+    "Slug": "bruschetta",
+    "Dest": "assets/images/productos/bruschetta.jpg"
+  },
+  {
+    "Slug": "bufeet",
+    "Dest": "assets/images/index/bufeet.jpg"
+  },
+  {
+    "Slug": "cafea",
+    "Dest": "assets/images/index/cafea.jpeg"
+  },
+  {
+    "Slug": "canape",
+    "Dest": "assets/images/productos/canape.jpg"
+  },
+  {
+    "Slug": "capuchino",
+    "Dest": "assets/images/productos/capuchino.jpg"
+  },
+  {
+    "Slug": "catering1",
+    "Dest": "assets/images/index/catering1.jpg"
+  },
+  {
+    "Slug": "catering2",
+    "Dest": "assets/images/index/catering2.png"
+  },
+  {
+    "Slug": "catering3",
+    "Dest": "assets/images/index/catering3.jpg"
+  },
+  {
+    "Slug": "catering4",
+    "Dest": "assets/images/index/catering4.jpg"
+  },
+  {
+    "Slug": "catering5",
+    "Dest": "assets/images/index/catering5.jpeg"
+  },
+  {
+    "Slug": "causa",
+    "Dest": "assets/images/productos/causa.jpg"
+  },
+  {
+    "Slug": "celebracion",
+    "Dest": "assets/images/index/celebracion.jpg"
+  },
+  {
+    "Slug": "champinones",
+    "Dest": "assets/images/productos/champinones.jpg"
+  },
+  {
+    "Slug": "chescake",
+    "Dest": "assets/images/productos/chescake.jpg"
+  },
+  {
+    "Slug": "chichamorada",
+    "Dest": "assets/images/productos/chichamorada.png"
+  },
+  {
+    "Slug": "club",
+    "Dest": "assets/images/index/club.jpg"
+  },
+  {
+    "Slug": "cocktail",
+    "Dest": "assets/images/productos/cocktail.jpg"
+  },
+  {
+    "Slug": "coorporativos",
+    "Dest": "assets/images/index/coorporativos.jpg"
+  },
+  {
+    "Slug": "copa",
+    "Dest": "assets/images/productos/copa.jpg"
+  },
+  {
+    "Slug": "crema",
+    "Dest": "assets/images/index/crema.jpg"
+  },
+  {
+    "Slug": "empanadas",
+    "Dest": "assets/images/productos/empanadas.jpg"
+  },
+  {
+    "Slug": "ensaladacesar",
+    "Dest": "assets/images/index/ensaladacesar.jpg"
+  },
+  {
+    "Slug": "especial",
+    "Dest": "assets/images/productos/especial.jpg"
+  },
+  {
+    "Slug": "evaristo",
+    "Dest": "assets/images/shared/evaristo.jpeg"
+  },
+  {
+    "Slug": "hecho-en-casa",
+    "Dest": "assets/images/shared/hecho-en-casa.jpeg"
+  },
+  {
+    "Slug": "hero-nosotros-1",
+    "Dest": "assets/images/nosotros/hero-1.jpg"
+  },
+  {
+    "Slug": "hero-nosotros-2",
+    "Dest": "assets/images/nosotros/hero-2.jpg"
+  },
+  {
+    "Slug": "hero-nosotros-3",
+    "Dest": "assets/images/nosotros/hero-3.jpg"
+  },
+  {
+    "Slug": "hero-nosotros-4",
+    "Dest": "assets/images/nosotros/hero-4.jpg"
+  },
+  {
+    "Slug": "hero-nosotros-5",
+    "Dest": "assets/images/nosotros/hero-5.jpg"
+  },
+  {
+    "Slug": "infusiones",
+    "Dest": "assets/images/index/infusiones.jpg"
+  },
+  {
+    "Slug": "jfresa",
+    "Dest": "assets/images/productos/jfresa.jpeg"
+  },
+  {
+    "Slug": "lasagna",
+    "Dest": "assets/images/productos/lasagna.jpg"
+  },
+  {
+    "Slug": "limonada",
+    "Dest": "assets/images/productos/limonada.jpg"
+  },
+  {
+    "Slug": "lomo",
+    "Dest": "assets/images/index/lomo.jpg"
+  },
+  {
+    "Slug": "lomo-saltado",
+    "Dest": "assets/images/productos/lomo-saltado.png"
+  },
+  {
+    "Slug": "lucha-parodi",
+    "Dest": "assets/images/shared/lucha-parodi.jpeg"
+  },
+  {
+    "Slug": "maracuya",
+    "Dest": "assets/images/productos/maracuya.jpg"
+  },
+  {
+    "Slug": "mini-croissants",
+    "Dest": "assets/images/productos/mini-croissants.jpg"
+  },
+  {
+    "Slug": "mini-sandwinch",
+    "Dest": "assets/images/productos/mini-sandwinch.jpg"
+  },
+  {
+    "Slug": "mousse",
+    "Dest": "assets/images/productos/mousse.jpeg"
+  },
+  {
+    "Slug": "naranja",
+    "Dest": "assets/images/productos/naranja.png"
+  },
+  {
+    "Slug": "nosotros",
+    "Dest": "assets/images/index/nosotros.jpg"
+  },
+  {
+    "Slug": "nosotros2",
+    "Dest": "assets/images/index/nosotros2.jpeg"
+  },
+  {
+    "Slug": "nosotros3",
+    "Dest": "assets/images/index/nosotros3.jpeg"
+  },
+  {
+    "Slug": "nosotros4",
+    "Dest": "assets/images/index/nosotros4.jpeg"
+  },
+  {
+    "Slug": "nosotros5",
+    "Dest": "assets/images/index/nosotros5.jpeg"
+  },
+  {
+    "Slug": "p1",
+    "Dest": "assets/images/productos/p1.jpeg"
+  },
+  {
+    "Slug": "p2",
+    "Dest": "assets/images/productos/p2.jpeg"
+  },
+  {
+    "Slug": "p3",
+    "Dest": "assets/images/productos/p3.jpeg"
+  },
+  {
+    "Slug": "p4",
+    "Dest": "assets/images/productos/p4.jpeg"
+  },
+  {
+    "Slug": "p5",
+    "Dest": "assets/images/productos/p5.jpeg"
+  },
+  {
+    "Slug": "p6",
+    "Dest": "assets/images/productos/p6.jpeg"
+  },
+  {
+    "Slug": "p7",
+    "Dest": "assets/images/productos/p7.jpeg"
+  },
+  {
+    "Slug": "p8",
+    "Dest": "assets/images/productos/p8.jpeg"
+  },
+  {
+    "Slug": "pana-cotta",
+    "Dest": "assets/images/productos/pana-cotta.jpg"
+  },
+  {
+    "Slug": "papa-gratinadas",
+    "Dest": "assets/images/productos/papa-gratinadas.jpg"
+  },
+  {
+    "Slug": "piadina",
+    "Dest": "assets/images/productos/piadina.jpg"
+  },
+  {
+    "Slug": "pokebowl",
+    "Dest": "assets/images/index/pokebowl.png"
+  },
+  {
+    "Slug": "polloalaplancha",
+    "Dest": "assets/images/index/polloalaplancha.jpg"
+  },
+  {
+    "Slug": "postresartesanales",
+    "Dest": "assets/images/productos/postresartesanales.jpg"
+  },
+  {
+    "Slug": "quesos",
+    "Dest": "assets/images/productos/quesos.jpg"
+  },
+  {
+    "Slug": "quiche-de-verduras",
+    "Dest": "assets/images/productos/quiche-de-verduras.jpg"
+  },
+  {
+    "Slug": "risotto",
+    "Dest": "assets/images/productos/risotto.jpg"
+  },
+  {
+    "Slug": "sabor-y-arte",
+    "Dest": "assets/images/shared/sabor-y-arte.png"
+  },
+  {
+    "Slug": "salmon",
+    "Dest": "assets/images/productos/salmon.jpg"
+  },
+  {
+    "Slug": "seco",
+    "Dest": "assets/images/productos/seco.png"
+  },
+  {
+    "Slug": "strudel",
+    "Dest": "assets/images/index/strudel.jpg"
+  },
+  {
+    "Slug": "tabla",
+    "Dest": "assets/images/productos/tabla.jpg"
+  },
+  {
+    "Slug": "tequenos",
+    "Dest": "assets/images/productos/tequenos.jpg"
+  },
+  {
+    "Slug": "tiramisu",
+    "Dest": "assets/images/productos/tiramisu.jpg"
+  },
+  {
+    "Slug": "torta",
+    "Dest": "assets/images/index/torta.jpg"
+  },
+  {
+    "Slug": "torta-de-chocolate",
+    "Dest": "assets/images/productos/torta-de-chocolate.jpg"
+  },
+  {
+    "Slug": "tresleches",
+    "Dest": "assets/images/productos/tresleches.jpg"
+  },
+  {
+    "Slug": "tzabar",
+    "Dest": "assets/images/shared/tzabar.jpeg"
+  },
+  {
+    "Slug": "utp",
+    "Dest": "assets/images/shared/utp.jpg"
+  }
+]
