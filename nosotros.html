@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce al equipo de Sabor y Arte, su organización y sus responsabilidades.">
+  <title>Sabor y Arte | Nosotros</title>
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+
+  <!-- Fuentes e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Estilos propios: primero el común, luego el de la página -->
+  <link rel="stylesheet" href="styles/comun.css">
+  <link rel="stylesheet" href="styles/nosotros.css">
+</head>
+
+<body data-page="nosotros">
+
+  <header class="header">
+    <div class="container nav-container">
+
+      <a href="index.html#inicio" class="logo">
+        <img src="assets/images/shared/sabor-y-arte.png" alt="Sabor y Arte" class="logo-img">
+        <span>
+          <strong>Sabor <em>y</em> Arte</strong>
+          <small>CATERING & EVENTOS</small>
+        </span>
+      </a>
+
+      <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#menu">Menú</a>
+        <a href="index.html#conocenos">Conócenos</a>
+        <a href="index.html#eventos">Eventos</a>
+        <a href="index.html#opiniones">Opiniones</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="productos.html">Productos</a>
+        <a class="active" href="nosotros.html">Nosotros</a>
+      </nav>
+
+      <a class="nav-cta" href="index.html#contacto">Solicitar cotización</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button"
+        aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+
+<main>
+
+   <!-- ========== 2. SLIDER (5 imágenes) ========== -->
+    <section class="hero" id="inicio" aria-label="Galería principal">
+      <div class="slide">
+        <div class="item" style="background-image: url('assets/images/nosotros/hero-1.jpg');">
+          <div class="content">
+            <span class="badge-eyebrow">Catering &amp; Eventos</span>
+            <h1 class="name">Sabores que convierten cada evento en un momento inolvidable.</h1>
+            <p class="des">Creamos experiencias gastronómicas con sabor, creatividad y atención personalizada.</p>
+            <div class="actions">
+              <a href="#equipo" class="btn-dark-sa">Conoce al equipo</a>
+              <a href="#matrices" class="btn-light-sa">Ver matrices</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/images/nosotros/hero-2.jpg');">
+          <div class="content">
+            <span class="badge-eyebrow">Aniversarios</span>
+            <h1 class="name">Te acompañamos en los momentos más especiales de tu vida.</h1>
+            <p class="des">Variedad de platos y una maravillosa atención.</p>
+            <div class="actions">
+              <a href="#equipo" class="btn-dark-sa">Conoce al equipo</a>
+              <a href="index.html#contacto" class="btn-light-sa">Cotizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/images/nosotros/hero-3.jpg');">
+          <div class="content">
+            <span class="badge-eyebrow">Bodas</span>
+            <h1 class="name">Mesas de postres que enamoran.</h1>
+            <p class="des">Tortas, cupcakes y bocaditos diseñados para tu celebración.</p>
+            <div class="actions">
+              <a href="#equipo" class="btn-dark-sa">Conoce al equipo</a>
+              <a href="index.html#contacto" class="btn-light-sa">Cotizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/images/nosotros/hero-4.jpg');">
+          <div class="content">
+            <span class="badge-eyebrow">Corporativo</span>
+            <h1 class="name">Coffee breaks y almuerzos para tu empresa.</h1>
+            <p class="des">Puntualidad, presentación cuidada y sabor en cada reunión.</p>
+            <div class="actions">
+              <a href="#equipo" class="btn-dark-sa">Conoce al equipo</a>
+              <a href="index.html#contacto" class="btn-light-sa">Cotizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/images/nosotros/hero-5.jpg');">
+          <div class="content">
+            <span class="badge-eyebrow">Cumpleaños</span>
+            <h1 class="name">Celebra con menús a tu medida.</h1>
+            <p class="des">Buffet y banquetes completos para cada tipo de evento.</p>
+            <div class="actions">
+              <a href="#equipo" class="btn-dark-sa">Conoce al equipo</a>
+              <a href="index.html#contacto" class="btn-light-sa">Cotizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="prev" type="button" aria-label="Anterior">&larr;</button>
+        <button class="next" type="button" aria-label="Siguiente">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- ========== 3. MAPA DE ORGANIZACIÓN (líder y cargos) ========== -->
+    <section class="seccion" id="organigrama">
+      <div class="container">
+        <h2 class="titulo-sec"><span>Mapa de organización</span></h2>
+        <p class="sub">Presentamos a nuestro equipo de trabajo</p>
+        <div class="organigrama" id="organigramaCont"></div>
+      </div>
+    </section>
+
+    <!-- ========== 4. DESCRIPCIÓN DEL EQUIPO (5 integrantes con C.V.) ========== -->
+    <section class="seccion seccion-alt" id="equipo">
+      <div class="container">
+        <h2 class="titulo-sec"><span>Descripción del equipo</span></h2>
+        <p class="sub"> Un equipo comprometido con crear experiencias únicas </p>
+        <div class="row g-4 justify-content-center" id="equipoCont"></div>
+      </div>
+    </section>
+
+    <!-- ========== 5. MATRICES DE RESPONSABILIDAD (interactivas) ========== -->
+    <section class="seccion" id="matrices">
+      <div class="container">
+        <h2 class="titulo-sec"><span>Matrices de responsabilidades</span></h2>
+      
+        <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="tabsMatriz"></ul>
+
+        <div class="barra-matriz">
+          <input type="search" id="buscar" class="form-control" placeholder="Buscar actividad…" aria-label="Buscar actividad">
+          <select id="filtroPersona" class="form-select" aria-label="Filtrar por persona"></select>
+          <select id="filtroRol" class="form-select" aria-label="Filtrar por rol">
+            <option value="">Todos los roles</option>
+            <option value="R">R · Responsable</option>
+            <option value="M">M · Monitoreo</option>
+            <option value="D">D · Diseñador</option>
+            <option value="A">A · Analista</option>
+          </select>
+          <select id="filtroPrioridad" class="form-select" aria-label="Filtrar por prioridad">
+            <option value="">Toda prioridad</option>
+            <option value="Alta">Prioridad alta</option>
+            <option value="Media">Prioridad media</option>
+            <option value="Baja">Prioridad baja</option>
+          </select>
+        </div>
+
+        <div class="leyenda" aria-label="Leyenda">
+          <span><b class="rol rol-R">R</b> Responsable</span>
+          <span><b class="rol rol-M">M</b> Monitoreo</span>
+          <span><b class="rol rol-D">D</b> Diseñador</span>
+          <span><b class="rol rol-A">A</b> Analista</span>
+          <span class="ms-auto d-flex gap-2 flex-wrap">
+            <button type="button" class="btn-sm-sa" id="btnAgregar">+ Agregar actividad</button>
+            <button type="button" class="btn-sm-sa" id="btnCSV">Exportar CSV</button>
+            <button type="button" class="btn-sm-sa btn-sm-ghost" id="btnRestablecer">Restablecer</button>
+          </span>
+        </div>
+
+        <div class="tabla-wrap">
+          <table class="tabla-matriz" id="tablaMatriz"></table>
+        </div>
+        <div class="resumen" id="resumenMatriz"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== MODAL: C.V. del integrante ========== -->
+  <div class="modal fade" id="modalCV" tabindex="-1" aria-labelledby="cvTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header cv-modal-header">
+          <h2 class="modal-title" id="cvTitulo">C.V.</h2>
+          <button type="button" class="modal-cerrar" data-bs-dismiss="modal" aria-label="Cerrar ventana">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            <span>Cerrar</span>
+          </button>
+        </div>
+        <div class="modal-body" id="cvCuerpo"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm-sa btn-sm-ghost" id="cvAbrir">Ver / abrir C.V.</button>
+          <button type="button" class="btn-dark-sa border-0" id="cvPDF">⬇ Descargar C.V.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <!-- Marca y redes -->
+      <div class="footer-brand">
+        <a href="index.html#inicio" class="logo footer-logo">
+          <img src="assets/images/shared/sabor-y-arte.png" alt="Sabor y Arte">
+          <span>
+            <strong>Sabor <em>y</em> Arte</strong>
+            <small>CATERING & EVENTOS</small>
+          </span>
+        </a>
+
+        <p>Sabores que convierten cada evento en un momento inolvidable.</p>
+
+        <div class="socials">
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://wa.me/51975528463" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Empresas -->
+      <div class="footer-column">
+        <h3>Empresas</h3>
+
+        <a href="https://evaristocatering.pe/" target="_blank" rel="noopener noreferrer" class="empresa-link">
+          <img src="assets/images/shared/evaristo.jpeg" alt="Evaristo Catering" loading="lazy">
+          <span>Evaristo Catering</span>
+        </a>
+
+        <a href="https://luchaparodi.pe/" target="_blank" rel="noopener noreferrer" class="empresa-link">
+          <img src="assets/images/shared/lucha-parodi.jpeg" alt="Lucha Parodi" loading="lazy">
+          <span>Lucha Parodi</span>
+        </a>
+
+        <a href="https://www.tzabar.com.pe/cartas-del-catering.html" target="_blank" rel="noopener noreferrer"
+          class="empresa-link">
+          <img src="assets/images/shared/tzabar.jpeg" alt="Tzabar Catering" loading="lazy">
+          <span>Tzabar Catering</span>
+        </a>
+
+        <a href="https://hechoencasa.pe/" target="_blank" rel="noopener noreferrer" class="empresa-link">
+          <img src="assets/images/shared/hecho-en-casa.jpeg" alt="Hecho en Casa" loading="lazy">
+          <span>Hecho en Casa</span>
+        </a>
+      </div>
+
+      <!-- Servicios -->
+      <div class="footer-column">
+        <h3>Servicios</h3>
+        <a href="index.html#servicios">Eventos sociales</a>
+        <a href="index.html#servicios">Buffet y banquetes</a>
+        <a href="index.html#servicios">Catering corporativo</a>
+        <a href="index.html#servicios">Coffee break</a>
+      </div>
+
+      <!-- Contacto -->
+      <div class="footer-column">
+        <h3>Contacto</h3>
+
+        <a href="tel:+51975528463">
+          <i class="fa-solid fa-phone"></i>
+          <span>+51 975 528 463</span>
+        </a>
+
+        <a href="mailto:contacto@saboryarte.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>contacto@saboryarte.com</span>
+        </a>
+
+        <span class="contact-location">
+          <i class="fa-solid fa-location-dot"></i>
+          Lima, Perú
+        </span>
+      </div>
+    </div>
+
+    <!-- UTP -->
+    <div class="utp">
+      <a href="https://www.utp.edu.pe/" target="_blank" rel="noopener noreferrer" class="utp-link">
+        <img src="assets/images/shared/utp.jpg" alt="Universidad Tecnológica del Perú" loading="lazy">
+        <span>Universidad Tecnológica del Perú</span>
+      </a>
+    </div>
+
+    <!-- Pie inferior -->
+    <div class="footer-bottom">
+      <div class="container">
+        <span>
+          © <span id="year"></span> Sabor y Arte.
+          Todos los derechos reservados.
+        </span>
+        <span>Catering & Eventos</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/organigrama.js"></script>
+</body>
+
+</html>
